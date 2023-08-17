@@ -3,7 +3,7 @@ import Wimage from "./images/whatsapp.png";
 import Pimage from "./images/phone.png";
 
 export default function Contact() {
-
+  const viewcWidth = window.innerWidth
   const [inputValue,setinputValue] = useState("")
 
   const handleinputValue = (event) => {
@@ -33,31 +33,31 @@ export default function Contact() {
         <div
           style={{ padding: "20px", boxShadow: "0 3px 10px rgba(0,0,0,0.3)" }}
         >
-          <h2>Contact Us</h2>
-          <h4>Get the info you're looking for now</h4>
-          <button style={{ width: "120px", borderRadius: "15px",fontSize: "12px"}}>
+          <h2 style={{fontSize: viewcWidth <= 768 ? "14px" : ""}}>Contact Us</h2>
+          <h4 style={{fontSize: viewcWidth <= 768 ? "14px" : ""}}>Get the info you're looking for now</h4>
+          <button style={{ width: viewcWidth <= 768 ? "20px" : "", borderRadius: "15px",fontSize: "12px",height: viewcWidth <= 768 ? "20px" : ""}}>
             Energy Transformation
           </button>
-          <button style={{ width: "120px", borderRadius: "15px",fontSize: "12px"}}>
+          <button style={{ width: viewcWidth <= 768 ? "20px" : "", borderRadius: "15px",fontSize: "12px",height: viewcWidth <= 768 ? "20px" : ""}}>
             Energy sustainability
           </button>
-          <button style={{ width: "120px", borderRadius: "15px",fontSize: "12px"}}>
+          <button style={{ width: viewcWidth <= 768 ? "20px" : "", borderRadius: "15px",fontSize: "12px",height: viewcWidth <= 768 ? "20px" : ""}}>
             Energy Generation
           </button>
           <div style={{ display: "flex", flexDirection: "row" }}>
-            <button style={{ width: "120px", borderRadius: "15px",fontSize: "12px"}}>
+            <button style={{ width: viewcWidth <= 768 ? "20px" : "", borderRadius: "15px",fontSize: "12px",height: viewcWidth <= 768 ? "20px" : ""}}>
               Energy uses
             </button>
-            <button style={{ width: "120px", borderRadius: "15px",fontSize: "12px"}}>
+            <button style={{ width: viewcWidth <= 768 ? "20px" : "", borderRadius: "15px",fontSize: "12px",height: viewcWidth <= 768 ? "20px" : ""}}>
               Energy Availability
             </button>
-            <button style={{ width: "120px", borderRadius: "15px",fontSize: "12px"}}>
+            <button style={{ width: viewcWidth <= 768 ? "20px" : "",borderRadius: "15px",fontSize: "12px",height: viewcWidth <= 768 ? "20px" : ""}}>
               Research materials
             </button>
           </div>
-          <h3>Need immediate help</h3>
-          <h4>Reach us through</h4>
-          <div style={{ display: "flex", gap: "60px", padding: "30px" }}>
+          <h3 style={{fontSize: viewcWidth <= 768 ? "14px" : ""}}>Need immediate help</h3>
+          <h4 style={{fontSize: viewcWidth <= 768 ? "10px" : ""}}>Reach us through</h4>
+          <div style={{ display: "flex", gap: viewcWidth <= 768 ? "20px" : "", padding: "30px" }}>
             <div
               style={{
                 display: "flex",
@@ -67,12 +67,12 @@ export default function Contact() {
               }}
             >
               <img
-                style={{ width: "50px", marginRight: "70px" }}
+                style={{ width: viewcWidth <= 768 ? "20px" : "", marginRight: "70px" }}
                 src={Pimage}
                 alt="Phone call"
               />
               <br></br>
-              <h5>Call +234-9092001540</h5>
+              <h5 style={{fontSize: viewcWidth <= 768 ? "14px" : ""}}>Call +234-9092001540</h5>
             </div>
             <div
               style={{
@@ -82,18 +82,18 @@ export default function Contact() {
               }}
             >
               <img
-                style={{ width: "50px", marginLeft: "20px" }}
+                style={{ width: viewcWidth <= 768 ? "20px" : "", marginLeft: "20px" }}
                 src={Wimage}
                 alt="Whatsapp"
               />
               <br></br>
-              <h5>Chat using Whatsapp</h5>
-              <span>09092001540</span>
+              <h5 style={{fontSize: viewcWidth <= 768 ? "14px" : ""}}>Chat using Whatsapp</h5>
+              <span style={{fontSize: viewcWidth <= 768 ? "14px" : ""}}>09092001540</span>
             </div>
           </div>
         </div>
         <div style={{ marginLeft: "20px" }}>
-          <h5 style={{ marginTop: "30px" }}>
+          <h5 style={{ marginTop: "30px",fontSize: viewcWidth <= 768 ? "14px" : ""}}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
             et quos impedit ipsa tempore ab amet voluptatibus, necessitatibus
             laudantium modi quaerat. Maiores harum sunt

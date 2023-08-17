@@ -1,9 +1,10 @@
 button{
-    padding: 30px;
+    padding: 40px;
     outline:0;
     border-radius: 20px;
     border:1px;
     margin: 20px;
+
 }
 button:hover{
     background: grey ;
@@ -57,26 +58,6 @@ button:hover{
     background-color: rgba(0,0,0,0.1);
     border-radius: 30px;
 }
-.pat::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 30px;
-}
-.par::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.3);
-    border-radius: 30px;
-}
 .linkk{
     font-size: 20px;
 }
@@ -128,6 +109,12 @@ button:hover{
 .navbox2{
     margin-left: -100px;
 }
+.contain{
+    display: flex;
+      width: 100%;
+      padding: 30px;
+      background-color: rgba(0,0,0,0.3);
+}
 .child{
     height: 60vh;
     border-radius: 30px;
@@ -135,7 +122,21 @@ button:hover{
     font-family: sans-serif;
     padding: 30px;
 }
-
+.box4{
+    padding: 40px;
+    width: 70%;
+    border-radius: 0 0 20px 20px;
+    height: 50vh;
+    margin-left: 20%;
+    background-color: white;
+}
+.box3{
+    background-color: blue;
+    border-radius: 20px 20px 0 0;
+    width: 70%;
+    margin-left: 20%;
+    height: 20vh;
+}
 @media (max-width: 768px){
     .nav-box1{
         display: flex;
@@ -148,19 +149,87 @@ button:hover{
         z-index: 1000;
     }
     .parent{
-        width: 90%;
-        height: 70vh;
+        width: 80%;
+        height: 60vh;
         padding: 30px;
         border-radius: 30px;
-        margin-left: 60px;
+        margin-left: 30px;
         position: relative;
     }
-}
-.par{
-    width: 60%;
-    margin-left: -150px;
-}
-.pat{
-    width: 60%;
-    margin-left: -150px;
+    .parent-child{
+        z-index: 1;
+        position: relative;
+        border-radius: 30px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        color: white;
+        padding: 20px;
+        height: 50vh;
+    }
+     
+    button{
+        padding: 20px;
+        outline:0;
+        border-radius: 20px;
+        border:1px;
+        margin: 20px;
+        font-size: 15px;
+    }
+    .text5{
+        width: 130px;
+    }
+    .nav-box1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        color: #fff;
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+    }
+    .navbox2{
+        margin-left: -30px;
+    }
+    .link-box{
+        margin-left: 30px;
+        gap: 30px;
+    }
+    .second{
+        background-color: rgba(0,0,0,0.3);
+        width: 100%;
+        height: 80vh;
+    }
+
+    .about1{
+        width: 50%;
+        height: 60vh;
+    }
+    .about1text{
+        font-size: 14px;
+    }
+    .bio1{
+        width: 100%;
+    }
+    .contain{
+        display: flex;
+          width: 100%;
+          padding: 10px;
+          background-color: rgba(0,0,0,0.3);
+    }
+    .box3{
+        background-color: blue;
+        border-radius: 20px 20px 0 0;
+        width: 130%;
+        margin-left: -40%;
+        height: 10vh;
+    }
+    .box4{
+        padding: 40px;
+        width: 130%;
+        border-radius: 0 0 20px 20px;
+        height: 20vh;
+        margin-left: -40%;
+    }
 }

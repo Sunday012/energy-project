@@ -6,6 +6,7 @@ import myImage from "./images/Logo.png";
 import Image from "./images/Genesis.png";
 import { useState, useEffect } from "react";
 export default function NavBar() {
+  const vieportWidth = window.innerWidth
   const [prevScroll, setPrevScroll] = useState(0);
   const [scrollUp, setScrollUp] = useState(false);
 
@@ -26,7 +27,7 @@ export default function NavBar() {
         <div className="nav-box1"
           style={{
             backgroundColor: scrollUp ? "rgba(0,0,0,0.3)" : "white",
-            transition: "background-color 0.3s ease",
+            transition: "background-color 0.2s ease",
           }}
         >
           <div
@@ -36,6 +37,9 @@ export default function NavBar() {
               src={scrollUp ? Image : myImage}
               alt="Logo"
               className="first-img"
+              style={{
+                width: vieportWidth <= 768 ? "80px" : "130px"
+              }}
             />
           </div>
           <div className="link-box">
@@ -45,6 +49,7 @@ export default function NavBar() {
               style={{
                 textDecoration: "none",
                 color: scrollUp ? "white" : "black",
+                fontSize : vieportWidth <= 768 ? "15px" : ""
               }}
             >
               Home
@@ -55,6 +60,7 @@ export default function NavBar() {
               style={{
                 textDecoration: "none",
                 color: scrollUp ? "white" : "black",
+                fontSize : vieportWidth <= 768 ? "15px" : ""
               }}
             >
               About
@@ -65,6 +71,7 @@ export default function NavBar() {
               style={{
                 textDecoration: "none",
                 color: scrollUp ? "white" : "black",
+                fontSize : vieportWidth <= 768 ? "15px" : ""
               }}
             >
               Contact
